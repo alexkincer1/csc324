@@ -6,7 +6,7 @@ ch02_alex_kincer.js
 let line = "#";
 while (line.length <= 7) {
     console.log(line);
-    line = line + "#" ;
+    line = line + "#";
 }
 
 // FizzBuzz
