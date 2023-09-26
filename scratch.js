@@ -1,44 +1,27 @@
-// 09/14/2023
+// 9/21/2023
 
-// working on debug with class
 
-function countChar(str, char, count = 0) {
-    if (str.length == 0) {
-      return count;
-    }
-    if (str[0] == char) {
-      count += 1;
-    }
-    let smallerStr = str.slice(1);
-    return countChar(smallerStr, char, count);
+class Person {
+  constructor(name,age, desire) {
+    this.name = name;
+    this.age = age;
+    this.desire = desire;
+    this.greet();
   }
-  
-  console.log(
-    countChar(
-      "bamboozle",
-      "o"
-    )
-  );
-  
-  // with loop, to show debugging:
-  function countCharLoop(str, char) {
-    let count = 0;
-    while (str.length > 0) {
-      if (str[0] == char) {
-        count += 1;
-      }
-      str = str.slice(1);
-    }
-    return count;
+  greet() {console.log('Hello, my name is ${this.name}!')
+}
+}
+
+let dorothy = new Person("Dorothy", 12, "Kansas");
+dorothy.greet() ;
+console.log(dorothy.desire);
+console.log(dorothy) ;
+
+class Lion extends Person {
+  eat() {
+    console.log("Yum!");
   }
-  
-  console.log(
-    countCharLoop(
-      "bamboozle",
-      "o"
-    )
-  );
+}
 
-
-
-
+cowardly = new Lion("Coward", 20, "Courage");
+cowardly.eat()
