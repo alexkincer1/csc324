@@ -84,9 +84,9 @@ birthYearButton = document.querySelector("click", function sortByBirth);
 const tab = document.querySelector(bhangra);
 tab.innerHTML = makeTableContent(artists.birthYear)
 
-<randomButton> Randomize</randomButton>
-const randomButton = document.querySelector("#randon-button");
-randomButton.addeventlistener("click", Randomize)
-randomButton.addeventlistener("click", function)
+<therandoButton> Randomize</therandoButton>
+const therandoButton = document.querySelector("#therando-button");
+therandoButton.addeventlistener("click", Randomize)
+therandoButton.addeventlistener("click", function)
 const tab = document.querySelector(bhangra)
 tab.innerHTML = makeTableContents(artists.Randomize)
